@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    background-color:white;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.clgName {
+    text-align: center;
+    padding: 10px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clgPic {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.clgPic img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.nav-container {
+margin: 0px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+    color: white;
+    background-color: #0067B8;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1; /* Ensures navbar stays on top */
+    position: relative; /* Ensure proper stacking */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 5px 0px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+li {
+    font-size: 15px;
+}
+
+ul{
+    justify-content: space-evenly;
+}
+
+footer {
+    background-color: #111111;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+.content-placeholder{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
